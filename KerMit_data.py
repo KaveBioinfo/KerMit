@@ -695,7 +695,7 @@ def makeXLSX(dicoInit,dicoHaplo):
                 col+=1
             # Conservation & JS (for deletion make mean)
             for kermit in ["CONSEUK","CONSMET","CONSBIL","CONSVER","CONSTET","CONSAMN","CONSMAM","CONSEUT","CONSEUA","CONSPRI","JSEUK","JSMET","JSBIL","JSVER","JSTET","JSAMN","JSMAM","JSEUT","JSEUA","JSPRI"]:
-                if variant.INFO.get(kermit)==None: value = 0.0
+                if variant.INFO.get(kermit)==None: value = "."
                 else:
                     setValue = set(variant.INFO.get(kermit).split(","))
                     try: setValue.remove(None)
