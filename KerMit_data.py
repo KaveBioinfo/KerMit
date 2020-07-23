@@ -670,7 +670,8 @@ def makeXLSX(dicoInit,dicoHaplo):
             if type(variant.INFO.get('MMDhtz'))==tuple: dicoData[row][18] = str(variant.INFO.get('MMDhtz')[i]).replace("None",".")
             else: dicoData[row][18] = str(variant.INFO.get('MMDhtz')).replace("None",".")
             # ClinVar Annotation
-            dicoData[row][19] = str(variant.INFO.get('CVid')).replace("None",".")
+            if variant.INFO.get('CVid')==None: dicoData[row][19] = "."
+            else: dicoData[row][19] = variant.INFO.get('CVid')
             dicoData[row][20] = str(variant.INFO.get('CVdn')).replace("None",".").replace("|","\n").replace(",_",",").replace(",","\n")
             dicoData[row][21] = str(variant.INFO.get('CVrev')).replace("None",".").replace(",_",",").replace(",","\n")
             dicoData[row][22] = str(variant.INFO.get('CVsig')).replace("None",".")
