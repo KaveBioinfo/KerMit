@@ -34,7 +34,7 @@ def displayUsage(colorBool):
     printcolor("   --vep                       Path to VEP executable\n","0","white",False,colorBool)
     printcolor("\n Options arguments:\n","0","white",False,colorBool)
     printcolor("   --xlsx                      Path to output XLSX file\n","0","white",False,colorBool)    
-    printcolor("   --update                    Update data files (MITOMAP, HmtDB, ClinVar, MitoTip) [false]\n","0","white",False,colorBool)
+    printcolor("   --update                    Update source files (MITOMAP, HmtDB, ClinVar, MitoTip) [false]\n","0","white",False,colorBool)
     printcolor("   --bgzip                     bgzip and tabix output vcf [true]\n","0","white",False,colorBool)
     printcolor("   --tmp                       Path to temporary folder [/tmp]\n","0","white",False,colorBool)
     printcolor("   --thread                    Number of threads to use [1]\n","0","white",False,colorBool)

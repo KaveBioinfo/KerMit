@@ -19,7 +19,8 @@ def init(lstArgv):
                  "pathTmp":"/tmp/kermit", \
                  "update":False, \
                  "bgzip":True, \
-                 "nbThread":1 \
+                 "nbThread":1, \
+                 "kermitVersion":"v0.2" \
                 }
     if "--color false" in str(lstArgv).lower(): DicoInit["colorBool"] = False
     else: dicoInit["colorBool"] = True

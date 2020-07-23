@@ -5,7 +5,7 @@
 # author          : dooguypapua                      |
 # copyright       : CHU Angers                       |
 # date            : 20200712                         |
-# version         : 0.1                              |
+# version         : 0.2                             |
 # python_version  : 3.8.2                            |
 #==========================================================================================================
 # USAGE: KerMit.py pathVCF
@@ -61,7 +61,7 @@ printcolor(" done\n","0","white",False,dicoInit["colorBool"])
 
 #***** ADD haplogroup *****#
 printcolor(" Haplogrep     :","0","white",False,dicoInit["colorBool"])
-haplogrep_annotate(dicoInit)
+dicoHaplo = haplogrep_annotate(dicoInit)
 printcolor(" done\n","0","white",False,dicoInit["colorBool"])
 
 
@@ -75,7 +75,7 @@ printcolor(" done\n","0","white",False,dicoInit["colorBool"])
 
 #***** CREATE excel  *****#
 printcolor(" Output XLSX   :","0","white",False,dicoInit["colorBool"])
-makeXLSX(dicoInit)
+makeXLSX(dicoInit,dicoHaplo)
 printcolor(" done\n","0","white",False,dicoInit["colorBool"])
 
 
